@@ -123,11 +123,3 @@ The gRPC service exposes the following methods:
 | `Deposit`              | `account_id`, `amount`                  | `balance`, `message`                                                    | Deposits a positive amount into an account.                         |
 | `Withdraw`             | `account_id`, `amount`                  | `balance`, `message`                                                    | Withdraws a positive amount, if funds are sufficient.               |
 | `CalculateInterest`    | `account_id`, `annual_interest_rate`    | `balance`, `message`                                                    | Calculates and applies interest to the account balance.             |
-
-## Future Improvements
-
--   **Dockerize Application**: Containerize the server and Redis for easier deployment and environment consistency.
--   **Authentication & Authorization**: Implement token-based authentication (e.g., JWT) to secure the RPC methods.
--   **Add Unit and Integration Tests**: Develop a comprehensive test suite to ensure the reliability of each component.
--   **Implement Transaction History**: Add a new RPC method to retrieve a list of all transactions for an account.
--   **Asynchronous Client/Server**: Refactor using Python's `asyncio` for potentially higher performance under heavy I/O load.
